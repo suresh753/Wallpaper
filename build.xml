@@ -1,4 +1,4 @@
-<project name="Downloadjpg" default="filter">
+<project name="Downloadjpg" default="zipjpg">
 
 <target name="clean">
 <delete dir="jpgfiles"/>
@@ -21,6 +21,7 @@
            
            <zip destfile="jpg_img.zip"
            basedir="jpgfiles"/>
+           
 </target>
 
 </project>
