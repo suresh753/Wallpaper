@@ -11,13 +11,15 @@
 
 <target name="filter" depends="init">
 
-<copydir src="DownloadFiles"
-           dest="jpgfiles"
-           includes="*.jpg"/>
+<copy todir="jpgfiles">
+    <fileset dir="DownloadFiles">
+      <include name="*.jpg"/>
+    </fileset>
+  </copy>
 
 </target>
 
-<target name="zipjpg" depends="filter">
+<target name="zipjpg" depends="init,filter">
            
            <zip destfile="jpg_img.zip"
            basedir="jpgfiles"/>
