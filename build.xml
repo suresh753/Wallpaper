@@ -1,19 +1,18 @@
-<project name=Downloadjpg default="">
+<project name="Downloadjpg" default="filter">
 
-<target name=clean>
+<target name="clean">
 <delete dir="jpgfiles"/>
 </target>
 
-<target name=init depends="clean">
+<target name="init" depends="clean">
 <mkdir dir="jpgfiles"/>
 </target>
 
 <target name="filter" depends="init">
 
-  <copydir src=""
-           dest="${dist}"
-           includes="**/*.java"
-           excludes="mypackage/test/**"/>
+<copydir src="DownloadFiles"
+           dest="jpgfiles"
+           includes="*.jpg"/>
 
 </target>
 
