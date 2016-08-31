@@ -20,7 +20,7 @@
 <target name="zipjpg" depends="filter">
            
            <zip destfile="jpg_img.zip"
-           basedir="jpgfiles"
+           basedir="jpgfiles"/>
 </target>
 
 </project>
