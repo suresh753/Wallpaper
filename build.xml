@@ -1,5 +1,7 @@
 <project name="Downloadjpg" default="zipjpg">
     
+<property file="build.properties"/>
+    
 <property name="ID" value="E1317"/>
 
 <target name="clean">
