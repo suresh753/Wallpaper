@@ -1,8 +1,10 @@
 <project name="Downloadjpg" default="zipjpg">
     
-<property file="build.properties"/>
-    
 <property name="ID" value="E1317"/>
+
+<propertyfile file="build.properties">
+  <entry  key="ID" value="1319"/>
+</propertyfile>
 
 <target name="clean">
 <delete dir="jpgfiles"/>
