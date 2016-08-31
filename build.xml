@@ -16,4 +16,10 @@
 
 </target>
 
+<target name="zipjpg" depends="filter">
+           
+           <zip destfile="build/jpg_img.zip"
+           basedir="jpgfiles"
+</target>
+
 </project>
