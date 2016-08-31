@@ -1,4 +1,6 @@
 <project name="Downloadjpg" default="zipjpg">
+    
+<property name="ID" value="E1317"/>
 
 <target name="clean">
 <delete dir="jpgfiles"/>
@@ -7,6 +9,7 @@
 
 <target name="init" depends="clean">
 <mkdir dir="jpgfiles"/>
+<echo> KASTHURI SURESHBABU ID : ${ID}  </echo>
 </target>
 
 <target name="filter" depends="init">
