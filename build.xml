@@ -2,6 +2,7 @@
 
 <target name="clean">
 <delete dir="jpgfiles"/>
+<delete dir="build/jpg_img.zip"/>
 </target>
 
 <target name="init" depends="clean">
