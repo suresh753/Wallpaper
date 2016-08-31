@@ -2,7 +2,7 @@
 
 <target name="clean">
 <delete dir="jpgfiles"/>
-<delete dir="build/jpg_img.zip"/>
+<delete dir="jpg_img.zip"/>
 </target>
 
 <target name="init" depends="clean">
@@ -19,7 +19,7 @@
 
 <target name="zipjpg" depends="filter">
            
-           <zip destfile="build/jpg_img.zip"
+           <zip destfile="jpg_img.zip"
            basedir="jpgfiles"
 </target>
 
